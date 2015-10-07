@@ -14,6 +14,10 @@
 		B8FB75261BC44C1400077E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FB75241BC44C1400077E17 /* LaunchScreen.storyboard */; };
 		B8FB75311BC44C1400077E17 /* wwwwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB75301BC44C1400077E17 /* wwwwTests.swift */; };
 		B8FB753C1BC44C1500077E17 /* wwwwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FB753B1BC44C1500077E17 /* wwwwUITests.swift */; };
+		B8FB754E1BC44D5C00077E17 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FB754A1BC44D5C00077E17 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		B8FB754F1BC44D5C00077E17 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FB754B1BC44D5C00077E17 /* TwitterKit.framework */; settings = {ASSET_TAGS = (); }; };
+		B8FB75501BC44D5C00077E17 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8FB754C1BC44D5C00077E17 /* TwitterKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
+		B8FB75511BC44D5C00077E17 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FB754D1BC44D5C00077E17 /* TwitterCore.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		B8FB75371BC44C1400077E17 /* wwwwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwwwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FB753B1BC44C1500077E17 /* wwwwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwwwUITests.swift; sourceTree = "<group>"; };
 		B8FB753D1BC44C1500077E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FB754A1BC44D5C00077E17 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B8FB754B1BC44D5C00077E17 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		B8FB754C1BC44D5C00077E17 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		B8FB754D1BC44D5C00077E17 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FB754E1BC44D5C00077E17 /* Fabric.framework in Frameworks */,
+				B8FB75511BC44D5C00077E17 /* TwitterCore.framework in Frameworks */,
+				B8FB754F1BC44D5C00077E17 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,10 @@
 		B8FB750F1BC44C1400077E17 = {
 			isa = PBXGroup;
 			children = (
+				B8FB754A1BC44D5C00077E17 /* Fabric.framework */,
+				B8FB754B1BC44D5C00077E17 /* TwitterKit.framework */,
+				B8FB754C1BC44D5C00077E17 /* TwitterKitResources.bundle */,
+				B8FB754D1BC44D5C00077E17 /* TwitterCore.framework */,
 				B8FB751A1BC44C1400077E17 /* wwww */,
 				B8FB752F1BC44C1400077E17 /* wwwwTests */,
 				B8FB753A1BC44C1500077E17 /* wwwwUITests */,
@@ -135,6 +150,7 @@
 				B8FB75141BC44C1400077E17 /* Sources */,
 				B8FB75151BC44C1400077E17 /* Frameworks */,
 				B8FB75161BC44C1400077E17 /* Resources */,
+				B8FB75491BC44D0A00077E17 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -228,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FB75501BC44D5C00077E17 /* TwitterKitResources.bundle in Resources */,
 				B8FB75261BC44C1400077E17 /* LaunchScreen.storyboard in Resources */,
 				B8FB75231BC44C1400077E17 /* Assets.xcassets in Resources */,
 				B8FB75211BC44C1400077E17 /* Main.storyboard in Resources */,
@@ -249,6 +266,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8FB75491BC44D0A00077E17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 04f0106664a685b19d7e9a532d8b57c7a0ba0c8f 22723898b7f50c4f85f68cbd8eeb5787ca29fd1df336fb24926b8390ddd3a2c0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8FB75141BC44C1400077E17 /* Sources */ = {
@@ -396,6 +429,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = wwww/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sathish-chinniah.wwww";
@@ -407,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = wwww/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sathish-chinniah.wwww";
@@ -481,6 +522,7 @@
 				B8FB75421BC44C1500077E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FB75431BC44C1500077E17 /* Build configuration list for PBXNativeTarget "wwwwTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +531,7 @@
 				B8FB75451BC44C1500077E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FB75461BC44C1500077E17 /* Build configuration list for PBXNativeTarget "wwwwUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +540,7 @@
 				B8FB75481BC44C1500077E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
